@@ -1,0 +1,20 @@
+<div class="modal">
+    <h1 mat-dialog-title>{{title}} Produto</h1>
+    <div mat-dialog-content>
+        Preencha os campos com os dados correspondentes
+
+        <form
+            class="form"
+            [formGroup]="form" (ngSubmit)="submitForm()">
+            <div class="form-content">
+                <app-fields
+                    *ngFor="let field of fields"
+                    [field]="field" [form]="form"
+                ></app-fields>
+                <button class="form-content-button-add" type="submit" [disabled]="!form.valid">{{title}}</button>
+            </div>
+            <mat-icon class="form-icon">description</mat-icon>
+        </form>
+        <button class="form-button-close" (click)="closeModal()">Cancelar</button>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<form class="form-content-items" [formGroup]="form">
+    <label [for]="field.key">{{field.label}}</label>
+    <input class="form-content-items-input" 
+        type="text" 
+        [id]="field.key" 
+        [formControlName]="field.key"
+        [type]="field.type"
+        [readonly]="field.readonly">
+    <mat-icon class="check" *ngIf="isChecked">check</mat-icon>
+    <span *ngIf="isInvalidalid">Campo Obrigatório</span>
+</form>

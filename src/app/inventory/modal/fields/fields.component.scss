@@ -1,0 +1,27 @@
+.form-content-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: end;
+    height: 100%;
+    width: 100%;
+
+    &-input {
+        text-align: left !important;
+        &:read-only {
+            cursor: not-allowed;
+            background: gray;
+        }
+    }
+
+    .check {
+        position: fixed;
+        margin-top: 16px;
+        margin-left: 160px;
+        color: green;
+    }
+}
+
+span {
+    color: red;
+}

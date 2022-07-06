@@ -1,0 +1,76 @@
+.modal {
+
+    .form {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        &-content {
+            &-items {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: end;
+
+                &-input {
+                    text-align: left !important;
+                }
+
+                .check {
+                    position: fixed;
+                    margin-top: 16px;
+                    margin-left: 160px;
+                    color: green;
+                }
+            }
+
+            &-button-add {
+                margin-top: 10px;
+                height: 25px;
+                width: 100%;
+                cursor: pointer;
+                border: 0;
+                background: blue;
+                border-radius: 3px;
+                color: white;
+
+                &:disabled {
+                    cursor: not-allowed;
+                    background: black;
+                }
+
+                &:not(:disabled):hover {
+                    height: 40px;
+                    background: rgb(7, 7, 175);
+                }
+            }
+
+        }
+
+        &-button {
+            &-close {
+                margin-top: 10px;
+                cursor: pointer;
+                width: 100%;
+                height: 25px;
+                border: 0;
+                background: gray;
+                border-radius: 3px;
+
+                &:hover {
+                    height: 40px;
+                    background: rgb(90, 89, 89);
+                }
+            }
+        }
+
+        &-icon {
+            transform: scale(3);
+            margin-left: 20%;
+        }
+    }
+}
+
+span {
+    color: red;
+}

@@ -1,0 +1,39 @@
+.sidenav {
+    width: 100%;
+    border: 0 solid;
+    border-radius: 3px;
+
+    &-background {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        background: black;
+        align-items: center;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        border-radius: 1em;
+
+        .sidenav-buttons {
+            width: 7em;
+            height: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+
+            .sidenav-button {
+                cursor: pointer;
+                height: 5em;
+                width: 7em;
+                background: rgb(119, 0, 255);
+                border: 0 solid;
+                border-radius: 5px;
+
+                &:hover {
+                    background: rgb(65, 0, 139);
+                }
+            }
+        }
+    }
+}

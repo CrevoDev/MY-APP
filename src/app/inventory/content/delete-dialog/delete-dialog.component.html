@@ -1,0 +1,8 @@
+<div class="modal">
+    <h1 mat-dialog-title>Deseja mesmo remover o produto: {{data.brand}} {{data.model}}?</h1>
+    <div mat-dialog-content class="modal-dialog">
+        <mat-spinner></mat-spinner>
+        <button class="form-button-edit" (click)="removeData()">Sim</button>
+        <button class="form-button-close" (click)="closeModal()">Cancelar</button>
+    </div>
+</div>

@@ -1,0 +1,7 @@
+<div class="inventory">
+    <body class="inventory-background">
+        <app-header (addData)="addData($event)" (search)="search($event)"></app-header>
+        <app-content [items]="showData" (refresh)="refresh()"></app-content>
+        <app-footer [values]="totalData"></app-footer>
+    </body>
+</div>

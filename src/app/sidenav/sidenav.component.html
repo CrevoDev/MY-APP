@@ -1,0 +1,7 @@
+<div class="sidenav">
+    <div class="sidenav-background">
+        <div class="sidenav-buttons" *ngFor="let menu of menus">
+            <button class="sidenav-button" (click)="getButton(menu)">{{menu.name}}</button>
+        </div>
+    </div>
+</div>

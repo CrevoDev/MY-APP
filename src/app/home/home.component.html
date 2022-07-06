@@ -1,0 +1,8 @@
+<div class="home-background">
+    <div class="home-dashboard">
+        <div class="home-dashboard-itens" *ngFor="let dash of dashboards">
+            {{dash.name}}
+            <div class="home-dashboard-itens-item">{{getDashboard(dash)}}</div>
+        </div>
+    </div>
+</div>

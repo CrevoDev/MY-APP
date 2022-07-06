@@ -1,0 +1,35 @@
+.search {
+    margin: 1em;
+    display: flex;
+    align-items: center;
+    width: 87vw;
+
+    &-input {
+        text-align: center;
+        height: 32px;
+        width: 80%;
+        border: 0;
+        border-radius: 3em;
+        &:hover {
+            background: lightgray;
+        }
+    }
+
+    &-button {
+        cursor: pointer;
+        border: 0;
+        height: 32px;
+        width: 20%;
+        border-radius: 3em;
+        &:hover {
+            background: lightgrey;
+        }
+    }
+}
+
+.actions {
+    margin: 1em;
+    display: flex;
+    align-items: center;
+    width: 95%;
+}

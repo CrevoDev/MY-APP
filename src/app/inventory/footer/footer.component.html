@@ -1,0 +1,16 @@
+<footer class="footer">
+    <table class="footer-table">
+        <tr class="footer-table-thead-tr">
+            <th class="footer-table-thead-th">CUSTO TOTAL</th>
+            <th class="footer-table-thead-th">PREÇO TOTAL</th>
+            <th class="footer-table-thead-th">TOTAL DE PRODUTOS EM ESTOQUE</th>
+            <th class="footer-table-thead-th">LUCRO TOTAL</th>
+        </tr>
+        <tr class="footer-table-thead-tr" *ngFor="let value of values">
+            <td class="footer-table-thead-td">{{getCurrency(value.totalCoust)}}</td>
+            <td class="footer-table-thead-td">{{getCurrency(value.totalPrice)}}</td>
+            <td class="footer-table-thead-td">{{value.totalInventory}}</td>
+            <td class="footer-table-thead-td">{{getCurrency(value.totalProfit)}}</td>
+        </tr>
+    </table>
+</footer>

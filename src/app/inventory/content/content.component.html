@@ -1,0 +1,33 @@
+<div class="content">
+    <table class="content-table">
+
+        <tr class="content-table-thead-tr">
+            <th class="content-table-thead-th">MARCA</th>
+            <th class="content-table-thead-th">MODELO</th>
+            <th class="content-table-thead-th">CUSTO</th>
+            <th class="content-table-thead-th">PREÇO</th>
+            <th class="content-table-thead-th">ESTOQUE</th>
+            <th class="content-table-thead-th">AÇÕES</th>
+
+        </tr>
+        <tr class="content-table-thead-tr" *ngFor="let item of items">
+            <td class="content-table-thead-td">
+                <mat-icon>smartphone</mat-icon>{{item.brand}}
+            </td>
+            <td class="content-table-thead-td">{{item.model}}</td>
+            <td class="content-table-thead-td">{{getCurrency(item.coust)}}</td>
+            <td class="content-table-thead-td">{{getCurrency(item.price)}}</td>
+            <td class="content-table-thead-td">{{item.inventory}}</td>
+            <td class="content-table-thead-td">
+                <div class="content-table-tbody-td-button">
+                    <button class="content-table-tbody-td-button-delete" (click)="openDeleteModal(item)">
+                        <mat-icon class="content-table-tbody-td-delete-icon">delete</mat-icon>Deletar
+                    </button> |
+                    <button class="content-table-tbody-td-button-edit" (click)="openEditModal(item)">
+                        <mat-icon class="content-table-tbody-td-edit-icon">edit</mat-icon>Editar
+                    </button>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
