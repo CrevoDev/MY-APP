@@ -1,89 +1,93 @@
 .content {
-    font-family: Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    margin: 1em;
-    width: 87vw;
-    border-radius: 5px;
-    height: 68vh;
-    overflow: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  padding: 1em;
+  height: 100%;
+  border-radius: 5px;
 
-    &-table {
+  &-table {
 
-        &-thead {
+    &-thead {
 
-            &-tr {
-                font-family: monospace;
-            }
+      &-tr {
+        font-family: monospace;
+      }
 
-            &-th {
-                border: 1px double gray;
-                border-radius: 3px;
-                width: 100%;
-                background-color: azure;
-            }
+      &-th {
+        border: 1px double gray;
+        border-radius: 3px;
+        width: 100%;
+        background-color: azure;
+      }
 
-            &-td {
-                border: 1px double gray;
-                border-radius: 3px;
-                width: 100%;
-            }
+      &-td {
+        border: 1px double gray;
+        border-radius: 3px;
+        width: 100%;
+
+        mat-icon {
+          font-size: 30px;
+          height: 30px;
+          width: 30px;
         }
-
-        &-tbody {
-
-            &-td {
-                text-align: center;
-                border: 1px double gray;
-                border-radius: 3px;
-                width: 100%;
-                display: flex;
-
-                &-button {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-
-                    &-delete {
-                        display: flex;
-                        align-items: center;
-                        cursor: pointer;
-                        border: 0;
-                        color: white;
-                        min-width: 25%;
-                        max-width: 100%;
-                        width: 50%;
-                        text-align: center;
-                        background: rgb(214, 10, 10);
-                        border-radius: 1em;
-    
-                        &:hover {
-                            width: 100%;
-                            border: 1px;
-                            background: rgb(224, 18, 14);
-                        }
-                    }
-    
-                    &-edit {
-                        display: flex;
-                        align-items: center;
-                        cursor: pointer;
-                        border: 0;
-                        color: white;
-                        min-width: auto;
-                        max-width: 100%;
-                        width: 50%;
-                        text-align: center;
-                        background: rgb(10, 41, 214);
-                        border-radius: 1em;
-    
-                        &:hover {
-                            width: 100%;
-                            border: 1px;
-                            background: rgb(20, 49, 218);
-                        }
-                    }
-                }
-            }
-        }
+      }
     }
+
+    &-tbody {
+
+      &-td {
+        text-align: center;
+        border: 1px double gray;
+        border-radius: 3px;
+        width: 100%;
+        display: flex;
+
+        &-button {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          &-delete {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            border: 0;
+            color: white;
+            min-width: 25%;
+            max-width: 100%;
+            width: 50%;
+            text-align: center;
+            background: rgb(214, 10, 10);
+            border-radius: 1em;
+
+            &:hover {
+              width: 100%;
+              border: 1px;
+              background: rgb(224, 18, 14);
+            }
+          }
+
+          &-edit {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            border: 0;
+            color: white;
+            min-width: auto;
+            max-width: 100%;
+            width: 50%;
+            text-align: center;
+            background: rgb(10, 41, 214);
+            border-radius: 1em;
+
+            &:hover {
+              width: 100%;
+              border: 1px;
+              background: rgb(20, 49, 218);
+            }
+          }
+        }
+      }
+    }
+  }
 }

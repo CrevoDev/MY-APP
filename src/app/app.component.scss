@@ -1,9 +1,23 @@
 .app {
-    &-body {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        height: 95vh;
+  &-body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #bbbbbb4f;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+
+    app-sidenav {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 3rem;
     }
+
+    .routers {
+      height: calc(100vh - 3rem);
+      background: rgba(97, 134, 245, 0.1098039216);
+    }
+  }
 }

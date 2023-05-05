@@ -1,11 +1,25 @@
 .inventory {
-    &-background {
-        display: flex;
-        background: blueviolet;
-        border: 0 solid;
-        border-radius: 10px;
-        flex-direction: column;
-        align-items: center;
-        height: 90vh;
+  height: 100%;
+  width: 100%;
+
+  &-background {
+    display: flex;
+    border: 0 solid;
+    border-radius: 10px;
+    height: 100%;
+    flex-direction: column;
+
+    app-header {
+      height: 3em;
     }
+
+    app-content {
+      overflow: auto;
+      height: 100%;
+    }
+
+    app-footer {
+      // height: 3em;
+    }
+  }
 }

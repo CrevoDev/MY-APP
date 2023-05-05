@@ -1,39 +1,34 @@
 .sidenav {
-    width: 100%;
-    border: 0 solid;
-    border-radius: 3px;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(97, 134, 245, 0.1098039216);
+  display: flex;
+  justify-content: center;
+  border: 0 solid;
 
-    &-background {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        background: black;
-        align-items: center;
-        padding-top: 1em;
-        padding-bottom: 1em;
-        border-radius: 1em;
+  &-background {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 60%;
+    justify-content: space-around;
 
-        .sidenav-buttons {
-            width: 7em;
-            height: 80px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+    .sidenav-buttons {
+      width: 15em;
+      height: 80px;
+      display: flex;
 
+      .sidenav-button {
+        cursor: pointer;
+        height: 3rem;
+        width: 15em;
+        background: rgb(119, 0, 255);
+        border: 0 solid;
+        border-radius: 5px;
 
-            .sidenav-button {
-                cursor: pointer;
-                height: 5em;
-                width: 7em;
-                background: rgb(119, 0, 255);
-                border: 0 solid;
-                border-radius: 5px;
-
-                &:hover {
-                    background: rgb(65, 0, 139);
-                }
-            }
+        &:hover {
+          background: rgb(65, 0, 139);
         }
+      }
     }
+  }
 }

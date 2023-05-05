@@ -1,39 +1,43 @@
 .home {
-    &-background {
-        width: 80vw;
-        height: 80vh;
-        background: blueviolet;
-        border: 0 solid;
+  &-background {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #80808091;
+    border-radius: 10px;
+
+    .home-dashboard {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      &-itens {
+        cursor: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        margin: 1em;
         border-radius: 10px;
+        background: white;
+        width: 40em;
 
-        .home-dashboard {
-            display: grid;
-            height: 100%;
-            width: 100%;
-
-            &-itens {
-                cursor: auto;
-                display: flex;
-                align-items: center;
-                justify-content: space-around;
-                flex-direction: column;
-                margin: 1em;
-                border-radius: 10px;
-                background: white;
-                &:hover {
-                    background: whitesmoke;
-                }
-                &-item {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    font-size: xx-large;
-                    height: 80%;
-                    width: 80%;
-                    border-radius: 10px;
-                    opacity: 50%;
-                }
-            }
+        &:hover {
+          background: whitesmoke;
         }
+
+        &-item {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: xx-large;
+          height: 80%;
+          width: 80%;
+          border-radius: 10px;
+          opacity: 50%;
+        }
+      }
     }
+  }
 }
